@@ -4,7 +4,7 @@ const nextButton = document.getElementById('next-btn');
 let mensajes = [];
 
 function cargarMensajes() {
-    fetch('mensajes.json')// conviertes la respuesta en formato JSON 
+    fetch('../datos/mensajes.json')// conviertes la respuesta en formato JSON 
         .then(respuesta => respuesta.json())// conviertes la respuesta en formato JSON 
         .then(datos => {//obtienes los datos JSON y los asignas a la variable 
             mensajes = datos.mensajes;
