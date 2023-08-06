@@ -18,7 +18,7 @@
 
 2. Clona el repositorio en tu computadora para comenzar a trabajar.
 
-3. Deberas ingresar en la carpeta **`datos`**. Vas encontrar el archivo **`mensajes.json`**.
+3. Deberas ingresar en el archivo **`mensajes.json`**.
 
 ```
 {
