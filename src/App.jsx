@@ -1,25 +1,28 @@
 import Quote from './components/Quote/Quote';
 import quotes from './data';
 import './App.css';
+import { useEffect } from 'react';
 import { useState } from 'react';
 
 function App() {
 
-    const randomNumber = (max) => {
-        return Math.floor(Math.random() * max);
+    const [num, setNum] = useState(0);
+
+    const randomNumber = (quotes) => {
+        return Math.floor(Math.random() * quotes.length);
     }
-    
-    const [num, setNum] = useState(() => randomNumber(quotes.length));
-    
-    const updateNum = () => {
-        setNum(randomNumber(quotes.length));
-    }
-    
+
+    useEffect(() => {
+        setNum(randomNumber(quotes))
+    }, [num])
+
     return (
-        <Quote 
+        <Quote
             quote={quotes[num].quote}
             author={quotes[num].author}
-            updateNum={updateNum}
+            setNum={setNum}
+            randomNumber={randomNumber}
+            quotes={quotes}
         />
     )
 }

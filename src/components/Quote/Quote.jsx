@@ -1,7 +1,11 @@
 import styles from './Quote.module.css';
 
 export default function Quote(props) {
-    const { quote, author, updateNum } = props;
+    const { quote, author, setNum, randomNumber, quotes } = props;
+
+    const handleClick = () => {
+        setNum(randomNumber(quotes))
+    }
 
     return (
         <div className={styles.wrapper}>
@@ -16,10 +20,7 @@ export default function Quote(props) {
                 </div>
                 <div className={styles.buttons}>
                     {/* <a href="#"><i className='fa fa-twitter'></i></a> */}
-                    <button
-                        className={styles.button}
-                        onClick={updateNum}
-                    >New quote</button>
+                    <button onClick={handleClick} className={styles.button}>New quote</button>
                 </div>
             </div>
             <div className={styles.footer}>
