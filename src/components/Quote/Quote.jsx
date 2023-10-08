@@ -25,7 +25,7 @@ export default function Quote(props) {
             </div>
             <div className={styles.footer}>
                 by
-                <a href="#"> Tiago</a>
+                <a href="#"> PT15b group</a>
             </div>
 
         </div>
