@@ -31,4 +31,10 @@ export default [
       "El tonto no aprende de los errores. El inteligente aprende de sus errores. El sabio aprende de los errores de los demás",
     author: "Anónimo",
   },
+  {
+    id: 6,
+    quote:
+      "Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: la voluntad",
+    author: "Albert Einstein",
+  },
 ];
