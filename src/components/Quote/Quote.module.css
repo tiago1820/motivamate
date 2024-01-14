@@ -23,6 +23,9 @@
     font-weight: 500;
     font-size: 1.75em;
 }
+.quoteText span{
+    margin: 0 10px 0 10px;
+}
 
 .quoteAuthor {
     width: 450px;
