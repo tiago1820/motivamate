@@ -23,13 +23,16 @@
     font-weight: 500;
     font-size: 1.75em;
 }
+.quoteText span{
+    margin: 0 10px 0 10px;
+}
 
 .quoteAuthor {
     width: 450px;
     height: auto;
     clear: both;
     padding-top: 20px;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: right;
 
 }

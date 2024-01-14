@@ -13,6 +13,7 @@ export default function Quote(props) {
                 <div className={styles.quoteText}>
                     <i className='fa fa-quote-left'></i>
                     <span className={styles.spanText}>{quote}</span>
+                    <i className='fa fa-quote-right'></i>
                 </div>
                 <div className={styles.quoteAuthor}>
                     -
