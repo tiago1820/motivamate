@@ -37,4 +37,10 @@ export default [
       "Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: la voluntad",
     author: "Albert Einstein",
   },
+  {
+    id: 7,
+    quote:
+      "Si haces apenas lo que ya sabes, no serás más de lo que eres",
+    author: "Maestro Shifu",
+  },
 ];
